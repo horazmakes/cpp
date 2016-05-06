@@ -31,7 +31,7 @@ int main(void) {
   std::cout << ":" << std::setfill('0') << std::setw(2) << the_time -> tm_sec << std::endl;
 
   // 5. Find out the number of milliseconds until the next complete minute
-  int sec = the_time->tm_sec;
+  int sec = the_time -> tm_sec;
   int sleep_s = 60000 - (1000 * sec);
 
   // 6. Sleep for the number of milliseconds until the next complete minute
