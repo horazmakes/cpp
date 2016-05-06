@@ -24,7 +24,6 @@ int main(void) {
 
   // 4. Again, get full current time
   gettimeofday(&curTime, NULL);
-  milli = curTime.tv_usec / 1000;
   the_time = localtime(&curTime.tv_sec);
 
   std::cout << std::setfill('0') << std::setw(2) << the_time -> tm_hour;
@@ -40,7 +39,6 @@ int main(void) {
 
   // At this point milliseconds and seconds should be adjusted to zero
   gettimeofday(&curTime, NULL);
-  milli = curTime.tv_usec / 1000;
   the_time = localtime(&curTime.tv_sec);
 
   std::cout << std::setfill('0') << std::setw(2) << the_time -> tm_hour;
